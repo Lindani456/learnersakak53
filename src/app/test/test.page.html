@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Learner's License Test
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="question-card" *ngIf="questions.length > 0">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ questions[currentQuestionIndex].text }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img *ngIf="questions[currentQuestionIndex].image" [src]="questions[currentQuestionIndex].image"></ion-img>
+        <ion-list>
+          <ion-radio-group (ionChange)="selectAnswer($event)">
+            <ion-item *ngFor="let option of questions[currentQuestionIndex].options">
+              <ion-label>{{ option }}</ion-label>
+              <ion-radio slot="start" [value]="option"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ion-button (click)="prevQuestion()" [disabled]="currentQuestionIndex === 0">
+    Previous
+  </ion-button>
+  <ion-button (click)="nextQuestion()" [disabled]="currentQuestionIndex === questions.length - 1">
+    Next
+  </ion-button>
+  <ion-button (click)="submitTest()">Submit</ion-button>
+
+  <div class="time-remaining">Time Remaining: {{ formatTime(timeRemaining) }}</div>
+</ion-content>
