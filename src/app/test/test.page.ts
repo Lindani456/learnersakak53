@@ -65,7 +65,7 @@ export class TestPage implements OnInit {
   submitTest() {
   
     // Calculate score
-    const time=this.timer
+    const time=this.formatTime(this.timeRemaining);
     const correctAnswers = this.questions.filter(
       (q) => q.selectedAnswer === q.correctAnswer
     );

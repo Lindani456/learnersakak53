@@ -15,14 +15,17 @@ export class ResultPage implements OnInit {
   unansweredQuestions:  any[]=[];
   state: any;
   private routeSubscription: Subscription | undefined;
+  time: any;
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.routeSubscription = this.route.queryParams.subscribe((params) => {
       if (params && this.router.getCurrentNavigation()?.extras.state) {
         // Retrieve the entire state object
+        
         this.state = this.router.getCurrentNavigation()?.extras.state;
       this.score =this.state.score;
+      this.time=this.state.time;
         // Extract individual properties from the state
         this.correctAnswers = this.state.correctAnswers;
         this.incorrectAnswers = this.state.incorrectAnswers;

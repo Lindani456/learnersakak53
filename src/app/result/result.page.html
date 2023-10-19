@@ -11,6 +11,7 @@
 <ion-content>
   <ion-card class="result-card">
     <ion-card-content>
+      <p>time :{{time}}</p>
       <div class="score" *ngIf="score !== undefined">Your Score: {{ score.toFixed(2) }}%</div>
 
       <div *ngIf="correctAnswers.length > 0">
