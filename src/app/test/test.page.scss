@@ -1,73 +1,85 @@
-/* home.page.scss */
 
 ion-content {
-    --background: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .question-card {
-    width: 80%;
-    max-width: 500px;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .question-card:first-child {
-    margin-top: 0;
-  }
-  
-  .question-card:last-child {
-    margin-bottom: 0;
-  }
-  
-  ion-card-title {
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-  
-  ion-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  ion-img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  ion-list {
-    width: 100%;
-  }
-  
-  ion-radio {
-    --color-checked: #3880ff;
-  }
-  
-  ion-button {
-    width: 80%;
-    max-width: 300px;
-    --background: #3880ff;
-    --color: #ffffff;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  ion-button:hover {
-    --background: #3171e0;
-  }
-  
-  .time-remaining {
-    font-size: 1.2em;
-    margin: 20px 0;
-  }
+  --background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Add some padding for smaller screens */
+}
+
+.question-card {
+  width: 98%;
+ 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px; /* Add margin for smaller screens */
+}
+
+ion-card-title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+ion-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+ion-list {
+  width: 100%;
+}
+
+ion-radio {
+  --color-checked: #3880ff;
+}
+
+ion-button {
+  width: 80%;
+  max-width: 300px;
+  --background: #3880ff;
+  --color: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  margin: 5px; /* Add margin for smaller screens */
+}
+
+ion-button:hover {
+  --background: #3171e0;
+}
+
+.time-remaining {
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+ion-grid {
+  position: fixed;
+  margin-top: 200px;
+  width: 100%;
+  bottom: 50px;
+  margin-left: 2%;
+}
+
+#main-container {
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+  padding: 10px; /* Add padding for smaller screens */
+  max-width: 100%; /* Ensure it doesn't overflow the screen width */
+}
+ion-button{
+  width: 100%;
+ 
+}
