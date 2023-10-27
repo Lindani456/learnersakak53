@@ -17,7 +17,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Sign A6 tells you that...',
-      image: 'assets/image 1.jpg',
+      image: 'assets/a66.jpg',
       options: ['A. To yield to pedestrians.', 'B. To yield at a mini-circle', 'C. To yield at some intersections and give away to traffic on the road that you are approaching.'],
       correctAnswer: 'A. To yield to pedestrians.',
       selectedAnswer: '',
