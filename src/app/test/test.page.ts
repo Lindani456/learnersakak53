@@ -240,13 +240,6 @@ export class TestPage implements OnInit {
       selectedAnswer: '',
     },
     {
-      text: 'Road marking (a) in the sketch 6 tells you that...',
-      image: 'assets/sketch6A.jpg',
-      options: ['A. You may not stop next to this line.', 'B. Only ambulances amy stop here.', 'C. This lane is for dangerous goods vehicles only.'],
-      correctAnswer: 'C. Do not enter',
-      selectedAnswer: '',
-    },
-    {
       text: 'what is the maximum distance that goods may project to the rear of the vehicle?',
       options: ['A. 1.5 meters', 'B. 1.8 meters', 'C. 2 meters'],
       correctAnswer: 'B. 1.8 meters',
@@ -267,7 +260,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Sign ___ shows that if the length of a vehicle exceeds the indicated length it may not proceed beyond a certain point.',
-      image: 'assets/image1.jpg',
+      image: 'assets/Q88_1.jpg',
       options: ['A. D8', 'B. D9', 'C. D10'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -287,7 +280,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Signs ___ shows that vehicles carrying dangerous goods are prohibited from using a road.',
-      image: 'assets/image1.jpg',
+      image: 'assets/Q90_1 (1).jpg',
       options: ['A. G1', 'B. G2', 'C. D1'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
