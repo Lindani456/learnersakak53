@@ -15,6 +15,7 @@
         <ion-card-title>{{ questions[currentQuestionIndex].text }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
+        <ion-text>Question :{{this.currentQuestionIndex}}</ion-text>
         <ion-img *ngIf="questions[currentQuestionIndex].image" [src]="questions[currentQuestionIndex].image"></ion-img>
         <ion-list>
           <ion-radio-group (ionChange)="selectAnswer($event)">
