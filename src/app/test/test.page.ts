@@ -293,7 +293,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Signs ___ indicates that delivery vehicles are prohibited beyond the sign during the two periods indicated on the sign.',
-      image: 'assets/image1.jpg',
+      image: 'assets/Q92_1.jpg',
       options: ['A. K8', 'B. K3', 'C. K4'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',

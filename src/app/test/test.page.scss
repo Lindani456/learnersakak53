@@ -84,3 +84,10 @@ ion-button{
   width: 100%;
  
 }
+.custom-label {
+ 
+  overflow: none;
+  text-wrap:wrap ;
+  /* Optional: add ellipsis (...) for text overflow */
+}
+

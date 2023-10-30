@@ -19,7 +19,7 @@
         <ion-list>
           <ion-radio-group (ionChange)="selectAnswer($event)">
             <ion-item *ngFor="let option of questions[currentQuestionIndex].options">
-              <ion-label>{{ option }}</ion-label>
+              <ion-label class="custom-label">{{ option }}</ion-label>
               <ion-radio slot="start" [value]="option"></ion-radio>
             </ion-item>
           </ion-radio-group>
