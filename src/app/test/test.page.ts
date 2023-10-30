@@ -17,7 +17,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Sign A6 tells you that...',
-      image: 'assets/a66.jpg',
+      image: 'assets/a6.jpg',
       options: ['A. To yield to pedestrians.', 'B. To yield at a mini-circle', 'C. To yield at some intersections and give away to traffic on the road that you are approaching.'],
       correctAnswer: 'A. To yield to pedestrians.',
       selectedAnswer: '',
@@ -128,7 +128,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Signs E2 prohibits you from...',
-      image: 'assets/image1.jpg',
+      image: 'assets/e2.jpg',
       options: ['A. Picking up hitch-hikers for the next two kilometres.', 'B. Overtaking for the next 100 meters.', 'C. Stopping to pick up hitch-hikers for 500 meters beyond the sign.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -141,7 +141,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'The chevron T8 with the arrows pointing outwards shows..',
-      image: 'assets/image1.jpg',
+      image: 'assets/t8.jpg',
       options: ['A. That there in boom barricade.', 'B. That the road is closed at this point.', 'C. The position of the adjoining road at the T-junction.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
