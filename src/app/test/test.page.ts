@@ -76,7 +76,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'When you see the road marking Y4 on the road you must...',
-      image: 'assets/Q42_1.jpg',
+      image: 'assets/y4.jpg',
       options: ['A. Drive on the painted island to allow others to pass.', 'B. Not drive or stop on the painted island.', 'C. Only overtake in this area.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -154,7 +154,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'The diagrammatic sign W5 indicates...',
-      image: 'assets/image1.jpg',
+      image: 'assets/w5.jpg',
       options: ['A. The converging of a traffic lane.', 'B. The right lane splits.', 'C. There is an additional lane.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
