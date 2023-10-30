@@ -24,7 +24,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Sign M9 warns you that...',
-      image: 'assets/image2.jpg',
+      image: 'assets/Q12_1.jpg',
       options: ['A. There is a sharp junction ahead.', 'B. There are power pylons ahead.', 'C. That the dual roadway you are travelling on comes to an end ahead.'],
       correctAnswer: 'C. Warning',
       selectedAnswer: '',
@@ -37,7 +37,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Signs P4 warns that...',
-      image: 'assets/p4.jpg',
+      image: 'assets/Q14_1.jpg',
       options: ['A. There may animals suddenly accross the road', 'B. No hunting is allowed in this area', 'C. There is a guest ahead'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -63,7 +63,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'The road marking Y8 shows that...',
-      image: 'assets/y8.jpg',
+      image: 'assets/Q22_1.jpg',
       options: ['A. You are allowed to park there for one hour', 'B. You must keep this area clear at all times.', 'C. Buses are allowed to stop here.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -76,7 +76,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'When you see the road marking Y4 on the road you must...',
-      image: 'assets/y4.jpg',
+      image: 'assets/Q42_1.jpg',
       options: ['A. Drive on the painted island to allow others to pass.', 'B. Not drive or stop on the painted island.', 'C. Only overtake in this area.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -89,7 +89,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Signs O3 warns you that...',
-      image: 'assets/o3.jpg',
+      image: 'assets/Q30_1.jpg',
       options: ['A. There is a T-Junction ahead.', 'B. There are concealed driveways on the left and the right.', 'C. There are curves ahead.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -102,7 +102,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Road marking Y3 shows you that...',
-      image: 'assets/y3.jpg',
+      image: 'assets/Q32_1.jpg',
       options: ['A. A dual roadway begins.', 'B. You may not stop in this area.', 'C. You may not cross or overtake in this area.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -161,10 +161,18 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Signs E8 indicates that...',
-      image: 'assets/e8.jpg',
+      image: 'assets/Q26_2.jpg',
       options: ['A. You may not turn right.', 'B. You may not make a U turn for the 500 meters.', 'C. You may not make a U turn where the sign is displayed.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
+    },
+
+    {
+      text: 'Sign M5 warns you that you are approaching...',
+      image: 'assets/Q28_1.jpg',
+      options: ['A. A gravel road.', 'B. A winding road.', 'C. A staggered junction.'],
+      correctAnswer: 'A staggered junction',
+      selectedAnswer:  'C. A staggered junction.',
     },
     {
       text: 'When you are towing another vehicle, the maximum distance that the two vehicles may be parked...',
@@ -174,7 +182,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Which sign means that you must pay toll fees?',
-      image: 'assets/tollfee.jpg',
+      image: 'assets/Q40_1.jpg',
       options: ['A. C4', 'B. D4', 'C. E3'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -183,6 +191,13 @@ export class TestPage implements OnInit {
       text: 'Which of the following statements is correct?',
       options: ['A. Hand signals may not be used on freeways, except in emergencies.', 'B. Hand signals may be used by mototcylists.', 'C. Hand signals are used by tractor drivers only.'],
       correctAnswer: 'B. Hand signals may be used by mototcylists.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'Sign Y1 is a regulatory road marking that indicates...?',
+      image: 'assets/Q42_1.jpg',
+      options: ['A. The point of which right of way must be yielded to other traffic', 'B. You must reverse', 'C. That you may not stop here'],
+      correctAnswer: 'A. The point of which right of way must be yielded to other traffic',
       selectedAnswer: '',
     },
     {
@@ -205,8 +220,8 @@ export class TestPage implements OnInit {
       selectedAnswer: '',
     },
     {
-      text: 'In the sketch 8 under what position are you allowed to drive to the left of the yellow line RM4.1',
-      image: 'assets/rm41.jpg',
+      text: 'In the sketch 8 under what condition are you allowed to drive to the left of the yellow line RM4.1',
+      image: 'assets/Q46.jpg',
       options: ['A. If the faster cars behind you want to pass.', 'B. When you want to drive slower than 100km/h.', 'C. If your tyre is flat and you need to change.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -219,7 +234,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'what does the road marking GM1 in sketch 9 tell you?',
-      image: 'assets/gm1.jpg',
+      image: 'assets/Q48_1.jpg',
       options: ['A. That these lines are found on freeways.', 'B. That these are the lane lines for all road users.', 'C. That you may not cross when you see these lines.'],
       correctAnswer: 'C. Do not enter',
       selectedAnswer: '',
@@ -258,6 +273,13 @@ export class TestPage implements OnInit {
       selectedAnswer: '',
     },
     {
+      text: 'Road marking (a) in sketch 6 tells you that...',
+      image: 'assets/Q52_1.jpg',
+      options: ['A. You may not stop next to this line', 'B.Only ambulances may stop here', 'C. This lane is for danderous goods vehicles only'],
+      correctAnswer: 'C. Do not enter',
+      selectedAnswer: '',
+    },
+    {
       text: 'What are the rules for carrying passengers in a drawn vehicle?',
       options: ['A. The drawn vehicle must be a semi-trailer.', 'B. The vehicle must not exceed a speed of 40km/h.', 'C. The drawn vehicle must be a trailer.'],
       correctAnswer: 'B. The vehicle must not exceed a speed of 40km/h.',
@@ -285,9 +307,9 @@ export class TestPage implements OnInit {
     },
     {
       text: 'Sketch 3. Which number must you use if you want to check if there are vehicles approaching from behind or from sides?',
-      image: 'assets/image1.jpg',
+      image: 'assets/Q93_1.jpg',
       options: ['A. 1 and 3', 'B. 2 and 4', 'C. 4 and 6'],
-      correctAnswer: 'C. Do not enter',
+      correctAnswer: 'A. 1 and 3',
       selectedAnswer: '',
     },
     {
