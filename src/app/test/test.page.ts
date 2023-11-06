@@ -22,6 +22,29 @@ export class TestPage implements OnInit {
       correctAnswer: 'A. To yield to pedestrians.',
       selectedAnswer: '',
     },
+
+    ////Q7 missing combination
+    {
+      text: 'Signs B3 commands that...',
+      image: 'assets/b3.jpg',
+      options: ['A. You may overtake on the left on this area.', 'B. You must drive in the direction of the sign indicated by the arrow.', 'C. You must drive to the direction of this sign.'],
+      correctAnswer: 'B. You must drive in the direction of the sign indicated by the arrow.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'You are approaching the pedestrian crossing. How must you react?',
+      options: ['A. Give way to pedestrians who are crossing.', 'B. You do not have to give way to pedestrians who are waiting to cross.', 'C. Slow down and hoot.'],
+      correctAnswer: 'A. Give way to pedestrians who are crossing.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'Signs E2 prohibits you from...',
+      image: 'assets/e2.jpg',
+      options: ['A. Picking up hitch-hikers for the next two kilometres.', 'B. Overtaking for the next 100 meters.', 'C. Stopping to pick up hitch-hikers for 500 meters beyond the sign.'],
+      correctAnswer: 'C. Stopping to pick up hitch-hikers for 500 meters beyond the sign.',
+      selectedAnswer: '',
+    },
+    //// Q11 missing combination
     {
       text: 'Sign M9 warns you that...',
       image: 'assets/Q12_1.jpg',
@@ -56,6 +79,32 @@ export class TestPage implements OnInit {
       selectedAnswer: '',
     },
     {
+      text: 'Which one of the following explanations is correct as far as the 2 second rule for the following of a vehicle is concerned.',
+      options: ['A. Wait until the back of a vehicle in front of you passes a fixed point alongside the road. Slowly count to 10. If the front of the vehicle has not passed that point before you have finished counting you are following as a safe distance.', 'B. Wait until the back of a vehicle passes a fixed point alongside the road. Then count "1001, 1002". If the front of the vehicle has not passed that point before you have finished counting you are following at a safe distance.', 'C. Wait until the back of a vehicle in front of you passes a fixed point alongside the road. Count to two, if the front of your vehicle has not passed that point before you have finished counting you are at a safe distance.'],
+      correctAnswer: 'B. Wait until the back of a vehicle passes a fixed point alongside the road. Then count "1001, 1002". If the front of the vehicle has not passed that point before you have finished counting you are following at a safe distance.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'The chevron T8 with the arrows pointing outwards shows..',
+      image: 'assets/t8.jpg',
+      options: ['A. That there in boom barricade.', 'B. That the road is closed at this point.', 'C. The position of the adjoining road at the T-junction.'],
+      correctAnswer: 'C. The position of the adjoining road at the T-junction.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'What is the stopping distance behind another vehicle?',
+      options: ['A. 4 meters or one vehicle length', 'B. 2 meters.', 'C. 1.5 meters.'],
+      correctAnswer: 'A. 4 meters or one vehicle length',
+      selectedAnswer: '',
+    },
+    {
+      text: 'The diagrammatic sign W5 indicates...',
+      image: 'assets/w5.jpg',
+      options: ['A. The converging of a traffic lane.', 'B. The right lane splits.', 'C. There is an additional lane.'],
+      correctAnswer: 'C. There is an additional lane.',
+      selectedAnswer: '',
+    },
+    {
       text: 'You may park...',
       options: ['A. On a two way road that is narrower than 5.5 meters in an urban area.', 'B. On a traffic island', 'C. 10 meters away from an intersection'],
       correctAnswer: 'C. 10 meters away from an intersection',
@@ -81,6 +130,27 @@ export class TestPage implements OnInit {
       correctAnswer: 'B. Not drive or stop on the painted island.',
       selectedAnswer: '',
     },
+    ///Q25 missing comination
+    {
+      text: 'Signs E8 indicates that...',
+      image: 'assets/Q26_2.jpg',
+      options: ['A. You may not turn right.', 'B. You may not make a U turn for the 500 meters.', 'C. You may not make a U turn where the sign is displayed.'],
+      correctAnswer: 'C. You may not make a U turn where the sign is displayed.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'When you are towing another vehicle, the maximum distance that the two vehicles may be parked...',
+      options: ['A. 2 meters.', 'B. 5 meters.', 'C. 3.5 meters.'],
+      correctAnswer: 'C. 3.5 meters.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'Sign M5 warns you that you are approaching...',
+      image: 'assets/Q28_1.jpg',
+      options: ['A. A gravel road.', 'B. A winding road.', 'C. A staggered junction.'],
+      correctAnswer: 'C. A staggered junction.',
+      selectedAnswer:  '',
+    },
     {
       text: 'The seat belts have been removed from your vehicle, which rule is applicable here?',
       options: ['A. The vehicle may be used on a public road until you get them replaced.', 'B. The rules do not apply for vehicles older than 2 years.', 'C. The vehicle may not be used on a public road.'],
@@ -105,6 +175,12 @@ export class TestPage implements OnInit {
       image: 'assets/Q32_1.jpg',
       options: ['A. A dual roadway begins.', 'B. You may not stop in this area.', 'C. You may not cross or overtake in this area.'],
       correctAnswer: 'C. You may not cross or overtake in this area.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'You are approaching traffic lights. The red light is flashing, this means that you must...',
+      options: ['A. Slow down', 'B. Proceed with caution.', 'C. Stop as for a four way stop and yield to pedestians.'],
+      correctAnswer: 'C. Stop as for a four way stop and yield to pedestians.',
       selectedAnswer: '',
     },
     {
@@ -143,79 +219,6 @@ export class TestPage implements OnInit {
       text: 'Are you, as the driver of the vehicle, responsible for ensuring that all the passengers wear seatbelts?',
       options: ['A. Yes, you must ensure that passengers wear seatbelts.', 'B. No, you are not responsible.', 'C. No, you must ensure that children under 14 years wear seatbelts. Adults are responsible for themselves.'],
       correctAnswer: 'A. Yes, you must ensure that passengers wear seatbelts.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'You are approaching traffic lights. The red light is flashing, this means that you must...',
-      options: ['A. Slow down', 'B. Proceed with caution.', 'C. Stop as for a four way stop and yield to pedestians.'],
-      correctAnswer: 'C. Stop as for a four way stop and yield to pedestians.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'Signs B3 commands that...',
-      image: 'assets/b3.jpg',
-      options: ['A. You may overtake on the left on this area.', 'B. You must drive in the direction of the sign indicated by the arrow.', 'C. You must drive to the direction of this sign.'],
-      correctAnswer: 'B. You must drive in the direction of the sign indicated by the arrow.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'You are approaching the pedestrian crossing. How must you react?',
-      options: ['A. Give way to pedestrians who are crossing.', 'B. You do not have to give way to pedestrians who are waiting to cross.', 'C. Slow down and hoot.'],
-      correctAnswer: 'A. Give way to pedestrians who are crossing.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'Signs E2 prohibits you from...',
-      image: 'assets/e2.jpg',
-      options: ['A. Picking up hitch-hikers for the next two kilometres.', 'B. Overtaking for the next 100 meters.', 'C. Stopping to pick up hitch-hikers for 500 meters beyond the sign.'],
-      correctAnswer: 'C. Stopping to pick up hitch-hikers for 500 meters beyond the sign.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'Which one of the following explanations is correct as far as the 2 second rule for the following of a vehicle is concerned.',
-      options: ['A. Wait until the back of a vehicle in front of you passes a fixed point alongside the road. Slowly count to 10. If the front of the vehicle has not passed that point before you have finished counting you are following as a safe distance.', 'B. Wait until the back of a vehicle passes a fixed point alongside the road. Then count "1001, 1002". If the front of the vehicle has not passed that point before you have finished counting you are following at a safe distance.', 'C. Wait until the back of a vehicle in front of you passes a fixed point alongside the road. Count to two, if the front of your vehicle has not passed that point before you have finished counting you are at a safe distance.'],
-      correctAnswer: 'B. Wait until the back of a vehicle passes a fixed point alongside the road. Then count "1001, 1002". If the front of the vehicle has not passed that point before you have finished counting you are following at a safe distance.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'The chevron T8 with the arrows pointing outwards shows..',
-      image: 'assets/t8.jpg',
-      options: ['A. That there in boom barricade.', 'B. That the road is closed at this point.', 'C. The position of the adjoining road at the T-junction.'],
-      correctAnswer: 'C. The position of the adjoining road at the T-junction.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'What is the stopping distance behind another vehicle?',
-      options: ['A. 4 meters or one vehicle length', 'B. 2 meters.', 'C. 1.5 meters.'],
-      correctAnswer: 'A. 4 meters or one vehicle length',
-      selectedAnswer: '',
-    },
-    {
-      text: 'The diagrammatic sign W5 indicates...',
-      image: 'assets/w5.jpg',
-      options: ['A. The converging of a traffic lane.', 'B. The right lane splits.', 'C. There is an additional lane.'],
-      correctAnswer: 'C. There is an additional lane.',
-      selectedAnswer: '',
-    },
-    {
-      text: 'Signs E8 indicates that...',
-      image: 'assets/Q26_2.jpg',
-      options: ['A. You may not turn right.', 'B. You may not make a U turn for the 500 meters.', 'C. You may not make a U turn where the sign is displayed.'],
-      correctAnswer: 'C. You may not make a U turn where the sign is displayed.',
-      selectedAnswer: '',
-    },
-
-    {
-      text: 'Sign M5 warns you that you are approaching...',
-      image: 'assets/Q28_1.jpg',
-      options: ['A. A gravel road.', 'B. A winding road.', 'C. A staggered junction.'],
-      correctAnswer: 'C. A staggered junction.',
-      selectedAnswer:  '',
-    },
-    {
-      text: 'When you are towing another vehicle, the maximum distance that the two vehicles may be parked...',
-      options: ['A. 2 meters.', 'B. 5 meters.', 'C. 3.5 meters.'],
-      correctAnswer: 'C. 3.5 meters.',
       selectedAnswer: '',
     },
     {
@@ -277,6 +280,27 @@ export class TestPage implements OnInit {
       correctAnswer: 'B. That these are the lane lines for all road users.',
       selectedAnswer: '',
     },
+     ///////////missing 49 combination
+    {
+      text: 'In sketch 7, vehicle A has broken down. To get vehicle A the vehicle travelling behind vehicle A must...',
+      image: 'assets/q50.jpg',
+      options: ['A. Wait until it is safe, then do the neccessary observations and overtake.', 'B. Try to squeeze between the white line and vehicle A as quickly as possible.', 'C. Wait until the vehicle A has been moved out of the roadway.'],
+      correctAnswer: 'A. Wait until it is safe, then do the neccessary observations and overtake.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'You are not allowed to drive or sit in the drivers seat your private motor vehicle while the engine is running out of you have a concentration of alcohol in Blood.',
+      options: ['A. 0.05 grams alcohol 100ml blood or more.', 'B. 0.02 grams alcohol 100ml blood or more.', 'C. 0.08 grams alcohol 100ml blood or more.'],
+      correctAnswer: 'A. 0.05 grams alcohol 100ml blood or more.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'Road marking (a) in sketch 6 tells you that...',
+      image: 'assets/Q52_1.jpg',
+      options: ['A. You may not stop next to this line', 'B.Only ambulances may stop here', 'C. This lane is for danderous goods vehicles only'],
+      correctAnswer: 'A. You may not stop next to this line',
+      selectedAnswer: '',
+    },
     {
       text: 'what is the maximum distance that goods may project to the rear of the vehicle?',
       options: ['A. 1.5 meters', 'B. 1.8 meters', 'C. 2 meters'],
@@ -301,13 +325,6 @@ export class TestPage implements OnInit {
       image: 'assets/Q88_1.jpg',
       options: ['A. D8', 'B. D9', 'C. D10'],
       correctAnswer: 'C. D10',
-      selectedAnswer: '',
-    },
-    {
-      text: 'Road marking (a) in sketch 6 tells you that...',
-      image: 'assets/Q52_1.jpg',
-      options: ['A. You may not stop next to this line', 'B.Only ambulances may stop here', 'C. This lane is for danderous goods vehicles only'],
-      correctAnswer: 'A. You may not stop next to this line',
       selectedAnswer: '',
     },
     {
