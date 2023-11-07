@@ -9,13 +9,22 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'test',
+    redirectTo: 'wellcome',
     pathMatch: 'full'
   },
   {
     path: 'test',
     loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'wellcome',
+    loadChildren: () => import('./wellcome/wellcome.module').then( m => m.WellcomePageModule)
+  },
+
 
 ];
 

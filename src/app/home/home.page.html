@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Select a Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center animation-fade-in">
+  <button (click)="selectTest('test')" class="test-button">Test 1</button>
+  <button (click)="selectTest('test2')" class="test-button">Test 2</button>
+  <button (click)="selectTest('test2')" class="test-button">Test 3</button>
+
+  <ul>
+    <li>Ensure you have studied the material thoroughly.</li>
+    <li>You have a total of 10 minutes (600 seconds) to complete the test.</li>
+    <li>Answer all the questions to the best of your knowledge.</li>
+    <li>You can navigate between questions using the "Previous" and "Next" buttons.</li>
+    <li>Once submitted, the test cannot be retaken.</li>
+    <li>If the time runs out, the test will be automatically submitted.</li>
+  </ul>
+  <div><h1>GOOD LUCK</h1></div>
+</ion-content>
