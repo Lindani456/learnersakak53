@@ -218,7 +218,451 @@ export class Test3Page implements OnInit {
         ],
         correctAnswer: "B. Motor cars from driving on this road.",
         selectedAnswer: ""
-      }
+      },
+      ///
+      {
+        text: "The blind spot...",
+        options: [
+            "A. Is the area behind the advertisement board.",
+            "B. Is the area that you cannot see on your mirror.",
+            "C. Is the area on your windscreen where your license disc is affixed."
+        ],
+        correctAnswer: "B. Is the area that you cannot see on your mirror.",
+        selectedAnswer: ""
+    },
+    {
+        text: "Sign G5 forbids...",
+        img: "img",  // Replace with the actual image path
+        options: [
+            "A. Tractors to use this road.",
+            "B. Any animals on this road.",
+            "C. Animals drawn vehicles to use this road."
+        ],
+        correctAnswer: "C. Animals drawn vehicles to use this road.",
+        selectedAnswer: ""
+    },
+    {
+        text: "Your hooter must be audible for at least",
+        options: [
+            "A. 90 meters",
+            "B. 100 meters",
+            "C. 80 meters"
+        ],
+        correctAnswer: "A. 90 meters",
+        selectedAnswer: ""
+    },
+
+    /////////
+    {
+      text: "The blind spot...",
+      options: [
+          "A. Is the area behind the advertisement board.",
+          "B. Is the area that you cannot see on your mirror.",
+          "C. Is the area on your windscreen where your license disc is affixed."
+      ],
+      correctAnswer: "B. Is the area that you cannot see on your mirror.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Sign G5 forbids...",
+      img: "img1.jpg",  // Replace with the actual image path
+      options: [
+          "A. Tractors to use this road.",
+          "B. Any animals on this road.",
+          "C. Animals drawn vehicles to use this road."
+      ],
+      correctAnswer: "C. Animals drawn vehicles to use this road.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Your hooter must be audible for at least",
+      options: [
+          "A. 90 meters",
+          "B. 100 meters",
+          "C. 80 meters"
+      ],
+      correctAnswer: "A. 90 meters",
+      selectedAnswer: ""
+  },
+  {
+      text: "Sign Q8 warns you that...",
+      img: "img2.jpg",  // Replace with the actual image path
+      options: [
+          "A. The road narrows from the right-hand side.",
+          "B. The freeway ends here.",
+          "C. The road narrows from both sides."
+      ],
+      correctAnswer: "A. The road narrows from the right-hand side.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which one of the following statements is correct?",
+      options: [
+          "A. You must keep driving license at home in a safe place.",
+          "B. You must have your driving license with you when driving.",
+          "C. You must ask your supervisor to lock it safe at work for safekeeping."
+      ],
+      correctAnswer: "B. You must have your driving license with you when driving.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Sign J8 prohibits you from driving...",
+      img: "img3.jpg",  // Replace with the actual image path
+      options: [
+          "A. Too fast because it is heavy mist.",
+          "B. Faster than 100km/h at night.",
+          "C. Slower than 100km/h"
+      ],
+      correctAnswer: "C. Slower than 100km/h",
+      selectedAnswer: ""
+  },
+  {
+      text: "Generally, guidance and information have a green or brown background. What colour background does this board have for freeways?",
+      options: [
+          "A. Blue",
+          "B. Red",
+          "C. Yellow"
+      ],
+      correctAnswer: "C. Yellow",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which one of the following signs indicates that you must give right of way to other traffic?",
+      img: "img4.jpg",  // Replace with the actual image path
+      options: [
+          "A. A5",
+          "B. CC9",
+          "C. B6"
+      ],
+      correctAnswer: "B. CC9",
+      selectedAnswer: ""
+  },
+  {
+      text: "A zigzag zone indicates an area where...",
+      options: [
+          "A. You may pass other vehicle.",
+          "B. Buses may park.",
+          "C. You may not stop except for pedestrians."
+      ],
+      correctAnswer: "C. You may not stop except for pedestrians.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which of the following signs specifically show that the parking is exclusively for buses?",
+      img: "img5.jpg",  // Replace with the actual image path
+      options: [
+          "A. BB2",
+          "B. BB10",
+          "C. BB8"
+      ],
+      correctAnswer: "A. BB2",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which rules must be adhered to when towing a vehicle?",
+      options: [
+          "SELECT THE CORRECT COMBINATION",
+          "(a) the two vehicles must not be more than 5 meters apart.",
+          "(b) the tow rope must be securely attached.",
+          "(c) the towed vehicle must have efficient brakes.",
+          "(a) don't exceed 50km/h.",
+          "(b) the two vehicles must be more than 4 meters apart.",
+          "(c) no passengers are allowed in a towed vehicle.",
+          "(a) the person controlling the towed vehicle must have a valid license for the same class of vehicle being towed.",
+          "(b) the towed vehicle must have efficient brakes.",
+          "(c) the two vehicles not be more than 3.5 meters apart."
+      ],
+      correctAnswer: "C. (a) the person controlling the towed vehicle must have a valid license for the same class of vehicle being towed. (b) the towed vehicle must have efficient brakes. (c) the two vehicles must not be more than 3.5 meters apart.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which of the following warning signs indicates that there are low flying aircraft ahead?",
+      img: "img6.jpg",  // Replace with the actual image path
+      options: [
+          "A. S6",
+          "B. S4",
+          "C. D4"
+      ],
+      correctAnswer: "A. S6",
+      selectedAnswer: ""
+  },
+  {
+      text: "A load may not project more than to the rear of the vehicle.",
+      options: [
+          "A. 1 meter",
+          "B. 1.8 meters",
+          "C. 1.4 meters"
+      ],
+      correctAnswer: "B. 1.8 meters",
+      selectedAnswer: ""
+  },
+  {
+      text: "Arrow D in the sketch booklet sketch 5, shows you that...",
+      img: "img7.jpg",  // Replace with the actual image path
+      options: [
+          "A. Must turn right.",
+          "B. Must proceed straight or turn right.",
+          "C. Must turn left."
+      ],
+      correctAnswer: "C. Must turn left.",
+      selectedAnswer: ""
+  },
+  {
+      text: "What is the last action before changing lanes?",
+      options: [
+          "A. Flash your lights.",
+          "B. Sound your hooter.",
+          "C. Check your blind spot to ensure that it is still safe to change lanes."
+      ],
+      correctAnswer: "C. Check your blind spot to ensure that it is still safe to change lanes.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Road marking RTM3 in sketch 8 tells you that...",
+      img: "img8.jpg",  // Replace with the actual image path
+      options: [
+          "A. These lines divide traffic.",
+          "B. There are lines for pedestrians to cross at.",
+          "C. These are the stop lines for an intersection."
+      ],
+      correctAnswer: "A. These lines divide traffic.",
+      selectedAnswer: ""
+  },
+  {
+      text: "If your vehicle driver's seatbelt is broken, may you use the vehicle on a public road?",
+      options: [
+          "A. No",
+          "B. Yes",
+          "C. Yes, only if you have a letter from a garage."
+      ],
+      correctAnswer: "A. No",
+      selectedAnswer: ""
+  },
+  {
+      text: "What does the road marking RM5 in sketch 8 tell you?",
+      options: [
+          "A. That it is a parking zone.",
+          "B. That you may stop there.",
+          "C. That it is a painted traffic island and that you may not ride there."
+      ],
+      correctAnswer: "B. That you may stop there.",
+      selectedAnswer: ""
+  },
+  {
+      text: "What is the rule concerning emergency and construction vehicles as far as parking is concerned?",
+      options: [
+          "A. They may not park in a no stopping area.",
+          "B. They may not park 5 meters to an urban area.",
+          "C. They may park anywhere while on official business, but they must display necessary identification lamps."
+      ],
+      correctAnswer: "C. They may park anywhere while on official business, but they must display necessary identification lamps.",
+      selectedAnswer: ""
+  },
+  {
+      text: "On sketch 4 road marking RTM1 means that...",
+      options: [
+          "A. Vehicle A must treat this as a yield sign.",
+          "B. Vehicle B is allowed to pass vehicle A if the intersection is clear.",
+          "C. Vehicle A must stop before the line RTM1."
+      ],
+      correctAnswer: "C. Vehicle A must stop before the line RTM1.",
+      selectedAnswer: ""
+  },
+  {
+      text: "What does a flashing red light at a traffic light tell you?",
+      options: [
+          "A. To watch out for pedestrians.",
+          "B. That there was an accident.",
+          "C. That you should treat this intersection as a four-way stop."
+      ],
+      correctAnswer: "C. That you should treat this intersection as a four-way stop.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Look at sketch 6 in the booklet. When you see marking A, you know that you...",
+      img: "img9.jpg",  // Replace with the actual image path
+      options: [
+          "A. May not stop there at all times.",
+          "B. May not stop there at night.",
+          "C. May only stop there over the weekends."
+      ],
+      correctAnswer: "A. May not stop there at all times.",
+      selectedAnswer: ""
+  },
+  {
+      text: "The distance it takes a heavy motor vehicle to stop is...",
+      options: [
+          "A. Longer if the vehicle is heavily loaded.",
+          "B. Longer on a wet road than a dry road.",
+          "C. Both of the above."
+      ],
+      correctAnswer: "C. Both of the above.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which of the following signs prohibits goods over the indicated GVM?",
+      img: "img10.jpg",  // Replace with the actual image path
+      options: [
+          "A. F10",
+          "B. C9",
+          "C. P10"
+      ],
+      correctAnswer: "A. F10",
+      selectedAnswer: ""
+  },
+  {
+      text: "What is the speed limit unless indicated by a regulator sign for vehicles/combination of vehicles with GVM/GLM over 9000kg on freeways?",
+      options: [
+          "A. 100km/h",
+          "B. 90km/h",
+          "C. 80km/h"
+      ],
+      correctAnswer: "C. 80km/h",
+      selectedAnswer: ""
+  },
+  {
+      text: "Sign ____ shows that only goods vehicles are allowed in this area.",
+      img: "img11.jpg",  // Replace with the actual image path
+      options: [
+          "A. C8",
+          "B. F9",
+          "C. C5"
+      ],
+      correctAnswer: "A. C8",
+      selectedAnswer: ""
+  },
+  {
+      text: "The furthest you may reverse your vehicle is...",
+      options: [
+          "A. 30 meters.",
+          "B. As far as it is safe to do so.",
+          "C. 300 meters."
+      ],
+      correctAnswer: "B. As far as it is safe to do so.",
+      selectedAnswer: ""
+  },
+  {
+      text: "Sign _____ shows that a vehicle higher than the indicated height may not proceed beyond a certain point.",
+      img: "img12.jpg",  // Replace with the actual image path
+      options: [
+          "A. D8",
+          "B. D9",
+          "C. D10"
+      ],
+      correctAnswer: "A. D8",
+      selectedAnswer: ""
+  },
+  {
+      text: "A learner driver of a heavy motor vehicle...",
+      options: [
+          "A. Must have someone with him/her who has a driving license of the same code and permit.",
+          "B. May not carry passengers while driving.",
+          "C. Is not allowed to drive on a freeway."
+      ],
+      correctAnswer: "A. Must have someone with him/her who has a driving license of the same code and permit.",
+      selectedAnswer: ""
+  },
+  {
+      text: "A warning sign's color codes are...",
+      options: [
+          "A. Yellow and blue triangle",
+          "B. Blue and white disc",
+          "C. A black symbol with a white background with a red border (triangular)"
+      ],
+      correctAnswer: "C. A black symbol with a white background with a red border (triangular)",
+      selectedAnswer: ""
+  },
+  {
+      text: "Sketch 3. To make your vehicle move faster you must use number?",
+      img: "img13.jpg",  // Replace with the actual image path
+      options: [
+          "A. 7",
+          "B. 8",
+          "C. 10"
+      ],
+      correctAnswer: "C. 10",
+      selectedAnswer: ""
+  },
+  {
+      text: "Which number must you use if you want to check if there are vehicles approaching from behind or from sides?",
+      options: [
+          "A. 1 and 3",
+          "B. 2 and 4",
+          "C. 4 and 5"
+      ],
+      correctAnswer: "B. 2 and 4",
+      selectedAnswer: ""
+  },
+  {
+      text: "To change gear you must use number...",
+      options: [
+          "A. 6 and 8",
+          "B. 6 and 9",
+          "C. 7 and 8"
+      ],
+      correctAnswer: "A. 6 and 8",
+      selectedAnswer: ""
+  },
+  {
+    text: "To change gear you must use number...",
+    options: [
+        "A. 6 and 8",
+        "B. 6 and 9",
+        "C. 7 and 8"
+    ],
+    correctAnswer: "B. 6 and 9",
+    selectedAnswer: ""
+},
+{
+    text: "You intend moving forward from parker position you must...",
+    options: [
+        "A. Put on your hazard lamps.",
+        "B. Put on your head lamps.",
+        "C. Put on your indicator to warn other road users."
+    ],
+    correctAnswer: "C. Put on your indicator to warn other road users.",
+    selectedAnswer: ""
+},
+{
+    text: "Which control prevents your parked vehicle from moving?",
+    options: [
+        "A. 9",
+        "B. 6",
+        "C. 7"
+    ],
+    correctAnswer: "C. 7",
+    selectedAnswer: ""
+},
+{
+    text: "Which control must you use when you make a sharp turn?",
+    options: [
+        "A. 1,3,5,6 and 9",
+        "B. 1,3,4,5,6,8 and 9",
+        "C. 3,4,5,8 and 10"
+    ],
+    correctAnswer: "B. 1,3,4,5,6,8 and 9",
+    selectedAnswer: ""
+},
+{
+    text: "To make the vehicle turn you must use number...",
+    options: [
+        "A. 6",
+        "B. 4",
+        "C. 9"
+    ],
+    correctAnswer: "C. 9",
+    selectedAnswer: ""
+},
+{
+    text: "To stop your vehicle you must use number...",
+    options: [
+        "A. 6",
+        "B. 9",
+        "C. 10"
+    ],
+    correctAnswer: "B. 9",
+    selectedAnswer: ""
+}
     ]
       
   
