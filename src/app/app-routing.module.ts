@@ -23,7 +23,8 @@ const routes: Routes = [
   {
     path: 'wellcome',
     loadChildren: () => import('./wellcome/wellcome.module').then( m => m.WellcomePageModule)
-  },  {
+  },
+  {
     path: 'test2',
     loadChildren: () => import('./test2/test2.module').then( m => m.Test2PageModule)
   },
