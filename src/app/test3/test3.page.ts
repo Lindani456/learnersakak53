@@ -31,7 +31,7 @@ export class Test3Page implements OnInit {
     },
     {
       text: "Sign A8 tell you that...",
-     image: "assets/test3/Q6.jpg',",
+     image: "assets/test3/Q6.jpg",
       options: [
         "A. You may proceed carefully.",
         "B. No delivery may enter.",
