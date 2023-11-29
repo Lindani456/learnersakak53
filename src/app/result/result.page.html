@@ -10,6 +10,7 @@
 </ion-header>
 
 <ion-content>
+  <div id="pdfContent">
   <ion-card class="result-card">
     <ion-card-content>
       <p>time :{{time}}</p>
@@ -49,4 +50,7 @@
       </div>
     </ion-card-content>
   </ion-card>
+</div>
+
+<ion-button expand="full" (click)="generatePDF()">Download PDF</ion-button>
 </ion-content>
