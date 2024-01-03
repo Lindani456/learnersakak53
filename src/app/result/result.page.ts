@@ -18,28 +18,92 @@ export class ResultPage implements OnInit {
   correctAnswers: any[]=[];
   incorrectAnswers:  any[]=[];
   unansweredQuestions:  any[]=[];
+
+  displayedCorrectAnswers: any[] = [];
+  displayedIncorrectAnswers: any[] = [];
+  displayedUnansweredQuestions: any[] = [];
+
+  showCorrectAnswersFlag = false;
+  showIncorrectAnswersFlag = false;
+  showUnansweredQuestionsFlag = false;
+
   state: any;
   private routeSubscription: Subscription | undefined;
   time: any;
+
+
+
   constructor(private route: ActivatedRoute, private router: Router) {}
+
+
+
+ 
+
+  // ... (existing code)
 
   ngOnInit() {
     this.routeSubscription = this.route.queryParams.subscribe((params) => {
       if (params && this.router.getCurrentNavigation()?.extras.state) {
         // Retrieve the entire state object
-        
         this.state = this.router.getCurrentNavigation()?.extras.state;
-      this.score =this.state.score;
-      this.time=this.state.time;
+        this.score = this.state.score;
+        this.time = this.state.time;
+
         // Extract individual properties from the state
         this.correctAnswers = this.state.correctAnswers;
         this.incorrectAnswers = this.state.incorrectAnswers;
         this.unansweredQuestions = this.state.unansweredQuestions;
 
-        // Additional logic if needed
+        // Set default values for displayed arrays
+        this.displayedCorrectAnswers = this.correctAnswers;
+        this.displayedIncorrectAnswers = [];
+        this.displayedUnansweredQuestions = [];
+
+        // Set initial button visibility
+        this.showCorrectAnswersFlag = true;
+        this.showIncorrectAnswersFlag = false;
+        this.showUnansweredQuestionsFlag = false;
       }
     });
   }
+
+  showCorrectAnswers() {
+    this.showCorrectAnswersFlag = true;
+    this.showIncorrectAnswersFlag = false;
+    this.showUnansweredQuestionsFlag = false;
+
+    // Update displayed content
+    this.displayedCorrectAnswers = this.correctAnswers;
+    this.displayedIncorrectAnswers = [];
+    this.displayedUnansweredQuestions = [];
+  }
+
+  showIncorrectAnswers() {
+    this.showCorrectAnswersFlag = false;
+    this.showIncorrectAnswersFlag = true;
+    this.showUnansweredQuestionsFlag = false;
+
+    // Update displayed content
+    this.displayedCorrectAnswers = [];
+    this.displayedIncorrectAnswers = this.incorrectAnswers;
+    this.displayedUnansweredQuestions = [];
+  }
+
+  showUnansweredQuestions() {
+    this.showCorrectAnswersFlag = false;
+    this.showIncorrectAnswersFlag = false;
+    this.showUnansweredQuestionsFlag = true;
+
+    // Update displayed content
+    this.displayedCorrectAnswers = [];
+    this.displayedIncorrectAnswers = [];
+    this.displayedUnansweredQuestions = this.unansweredQuestions;
+  }
+
+  // ... (existing code)
+
+
+ 
 
   ngOnDestroy() {
     // Unsubscribe to avoid memory leaks

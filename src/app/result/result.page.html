@@ -16,41 +16,58 @@
       <p>time :{{time}}</p>
       <div class="score" *ngIf="score !== undefined">Your Score: {{ score.toFixed(2) }}%</div>
 
-      <div *ngIf="correctAnswers.length > 0">
+      <div *ngIf="showCorrectAnswersFlag && displayedCorrectAnswers.length > 0">
         <div class="answer-status correct">
           <ion-icon name="checkmark-circle"></ion-icon> Correct Answers
         </div>
         <ion-list>
-          <ion-item *ngFor="let answer of correctAnswers">
-            {{ answer.text }}
+          <ion-item *ngFor="let answer of displayedCorrectAnswers">
+            <ion-text color="primary">*</ion-text>
+            <ion-card> 
+              <ion-img *ngIf="answer.image" src="{{answer.image}}"></ion-img>
+            <ion-card-content>  {{ answer.text }} (Your answer: {{ answer.selectedAnswer }})</ion-card-content>
+            </ion-card>
           </ion-item>
+          <br>
         </ion-list>
       </div>
 
-      <div *ngIf="incorrectAnswers.length > 0">
+
+
+      <div *ngIf="showIncorrectAnswersFlag && displayedIncorrectAnswers.length > 0">   
         <div class="answer-status incorrect">
           <ion-icon name="close-circle"></ion-icon> Incorrect Answers
         </div>
         <ion-list>
-          <ion-item *ngFor="let answer of incorrectAnswers">
-            {{ answer.text }} (Your answer: {{ answer.selectedAnswer }})
+          <ion-item *ngFor="let answer of displayedIncorrectAnswers">
+            <ion-text color="primary">*</ion-text>
+            <ion-card> 
+              <ion-img *ngIf="answer.image" src="{{answer.image}}"></ion-img>
+            <ion-card-content>  {{ answer.text }} (Your answer: {{ answer.selectedAnswer }})</ion-card-content>
+            </ion-card>
           </ion-item>
         </ion-list>
       </div>
 
-      <div *ngIf="unansweredQuestions.length > 0">
+      <div *ngIf="showUnansweredQuestionsFlag && displayedUnansweredQuestions.length > 0">
         <div class="answer-status unanswered">
           <ion-icon name="help-circle"></ion-icon> Unanswered Questions
         </div>
         <ion-list>
-          <ion-item *ngFor="let question of unansweredQuestions">
-            {{ question.text }}
+          <ion-item *ngFor="let answer of  displayedUnansweredQuestions">
+            <ion-text color="primary">*</ion-text>
+            <ion-card> 
+              <ion-img *ngIf="answer.image" src="{{answer.image}}"></ion-img>
+            <ion-card-content>  {{ answer.text }}</ion-card-content>
+            </ion-card>
           </ion-item>
         </ion-list>
       </div>
     </ion-card-content>
   </ion-card>
 </div>
-
+<ion-button expand="full" (click)="showCorrectAnswers()" [color]="showCorrectAnswersFlag ? 'success' : 'light'">Correct Answers</ion-button>
+<ion-button expand="full" (click)="showIncorrectAnswers()" [color]="showIncorrectAnswersFlag ? 'danger' : 'light'">Incorrect Answers</ion-button>
+<ion-button expand="full" (click)="showUnansweredQuestions()" [color]="showUnansweredQuestionsFlag ? 'warning' : 'light'">Unanswered Questions</ion-button>
 <ion-button expand="full" (click)="generatePDF()">Download PDF</ion-button>
 </ion-content>
