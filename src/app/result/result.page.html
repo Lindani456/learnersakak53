@@ -2,20 +2,19 @@
 
 <ion-header>
   <ion-toolbar>
-    <ion-title> Test Result </ion-title>
+    <ion-title>
+      Test Result
+    </ion-title>
     <ion-icon name="home" slot="end" routerLink="/home"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div id="pdfContent">
-    <!-- Time and Score Section -->
-    <div *ngIf="showTimeAndScore">
-      <p>time: {{ time }}</p>
-      <div class="score" *ngIf="score !== undefined">
-        Your Score: {{ score.toFixed(2) }}%
-      </div>
-    </div>
+  <ion-card class="result-card">
+    <ion-card-content>
+      <p>time :{{time}}</p>
+      <div class="score" *ngIf="score !== undefined">Your Score: {{ score.toFixed(2) }}%</div>
 
       <div *ngIf="showCorrectAnswersFlag && displayedCorrectAnswers.length > 0">
         <div class="answer-status correct">
