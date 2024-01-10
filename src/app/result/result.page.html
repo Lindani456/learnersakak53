@@ -17,56 +17,58 @@
       </div>
     </div>
 
-    <!-- Correct Answers Section -->
-    <div *ngIf="showCorrectAnswers">
-      <div class="answer-status correct">
-        <ion-icon name="checkmark-circle"></ion-icon> Correct Answers
+      <div *ngIf="showCorrectAnswersFlag && displayedCorrectAnswers.length > 0">
+        <div class="answer-status correct">
+          <ion-icon name="checkmark-circle"></ion-icon> Correct Answers
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let answer of displayedCorrectAnswers">
+            <ion-text color="primary">*</ion-text>
+            <ion-card> 
+              <ion-img *ngIf="answer.image" src="{{answer.image}}"></ion-img>
+            <ion-card-content>  {{ answer.text }} (Your answer: {{ answer.selectedAnswer }})</ion-card-content>
+            </ion-card>
+          </ion-item>
+          <br>
+        </ion-list>
       </div>
-      <ion-list>
-        <ion-item *ngFor="let answer of correctAnswers">
-          <div>
-            <img *ngIf="answer.image" [src]="answer.image" alt="Question Image" />
-            {{ answer.text }}
-          </div>
-        </ion-item>
-      </ion-list>
-    </div>
 
-    <!-- Incorrect Answers Section -->
-    <div *ngIf="showIncorrectAnswers">
-      <div class="answer-status incorrect">
-        <ion-icon name="close-circle"></ion-icon> Incorrect Answers
+
+
+      <div *ngIf="showIncorrectAnswersFlag && displayedIncorrectAnswers.length > 0">   
+        <div class="answer-status incorrect">
+          <ion-icon name="close-circle"></ion-icon> Incorrect Answers
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let answer of displayedIncorrectAnswers">
+            <ion-text color="primary">*</ion-text>
+            <ion-card> 
+              <ion-img *ngIf="answer.image" src="{{answer.image}}"></ion-img>
+            <ion-card-content>  {{ answer.text }} (Your answer: {{ answer.selectedAnswer }})</ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-list>
       </div>
-      <ion-list>
-        <ion-item *ngFor="let answer of incorrectAnswers">
-          <div>
-            <img *ngIf="answer.image" [src]="answer.image" alt="Question Image" />
-            {{ answer.text }} (Your answer: {{ answer.selectedAnswer }})
-          </div>
-        </ion-item>
-      </ion-list>
-    </div>
 
-    <!-- Unanswered Questions Section -->
-    <div *ngIf="showUnansweredQuestions">
-      <div class="answer-status unanswered">
-        <ion-icon name="help-circle"></ion-icon> Unanswered Questions
+      <div *ngIf="showUnansweredQuestionsFlag && displayedUnansweredQuestions.length > 0">
+        <div class="answer-status unanswered">
+          <ion-icon name="help-circle"></ion-icon> Unanswered Questions
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let answer of  displayedUnansweredQuestions">
+            <ion-text color="primary">*</ion-text>
+            <ion-card> 
+              <ion-img *ngIf="answer.image" src="{{answer.image}}"></ion-img>
+            <ion-card-content>  {{ answer.text }}</ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-list>
       </div>
-      <ion-list>
-        <ion-item *ngFor="let question of unansweredQuestions">
-          <div>
-            <img *ngIf="question.image" [src]="question.image" alt="Question Image" />
-            {{ question.text }}
-          </div>
-        </ion-item>
-      </ion-list>
-    </div>
-  </div>
-
-  <!-- Buttons for Navigation -->
-  <ion-button expand="full" (click)="showTimeAndScoreSection()">Show Time and Score</ion-button>
-  <ion-button expand="full" (click)="showCorrectAnswersSection()">Show Correct Answers</ion-button>
-  <ion-button expand="full" (click)="showIncorrectAnswersSection()">Show Incorrect Answers</ion-button>
-  <ion-button expand="full" (click)="showUnansweredQuestionsSection()">Show Unanswered Questions</ion-button>
-  <ion-button expand="full" (click)="generatePDF()">Download PDF</ion-button>
+    </ion-card-content>
+  </ion-card>
+</div>
+<ion-button expand="full" (click)="showCorrectAnswers()" [color]="showCorrectAnswersFlag ? 'success' : 'light'">Correct Answers</ion-button>
+<ion-button expand="full" (click)="showIncorrectAnswers()" [color]="showIncorrectAnswersFlag ? 'danger' : 'light'">Incorrect Answers</ion-button>
+<ion-button expand="full" (click)="showUnansweredQuestions()" [color]="showUnansweredQuestionsFlag ? 'warning' : 'light'">Unanswered Questions</ion-button>
+<ion-button expand="full" (click)="generatePDF()">Download PDF</ion-button>
 </ion-content>
