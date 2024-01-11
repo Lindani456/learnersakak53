@@ -10,7 +10,13 @@ import { NavController } from '@ionic/angular';
 export class Test2Page implements OnInit {
 
   questions: any[] = [
-     //Q5
+     //Q5 combination
+     {
+      text: 'Which one of the following can be regarded as an abandoned vehicle?',
+      options: ['A. (a) a vehicle whose owner cannot be identified. (b) a vehicle that is parked illegally. (c) a vehicle that is likely to cause an obstruction.', 'B. (a) a vehicle that is parked illegally. (b) a vehicle that is parked in a no stopping area. (c) a vehicle that has been parked for three days in the same place outside an urban area.', 'C. (a) a vehicle whose owner cannot be identified. (b) a vehicle that is parked in a no stopping area. (c) a vehicle that has been parked for three days in the same place on an urban road.'],
+      correctAnswer: 'A. (a) a vehicle whose owner cannot be identified. (b) a vehicle that is parked illegally. (c) a vehicle that is likely to cause an obstruction.',
+      selectedAnswer: '',
+    },
     {
       text: 'Sign A5 tells you...',
       image: 'assets/test2A5.jpg',
@@ -201,6 +207,12 @@ export class Test2Page implements OnInit {
       correctAnswer: 'A. X2',
       selectedAnswer: '',
     },
+    {
+      text: 'When is it compulsory for you to stop your vehicle?',
+      options: ['A. (a) when signaled to do so by scholar patrol. (b) when your vehicle has been involved in an accident. (c) when signalled by traffic officer to do so.', 'B. (a) when signaled to do so by a person leading animals. (b) when your vehicle has been involved in an accident. (c) when signaled to do so by a traffic officer.', 'C. (a) within a railway reserve at a railway crossing. (b) when signalled to do so by a person driving farm animals.  (c) when signalled to do so by a hitchhiker.'],
+      correctAnswer: 'A. (a) when signaled to do so by scholar patrol. (b) when your vehicle has been involved in an accident. (c) when signalled by traffic officer to do so.',
+      selectedAnswer: '',
+    },
         ///Q35 combo
     {
       text: 'Which one of the following diagrammatic signs indicate that there is an arrestor bed lane ahead.',
@@ -254,7 +266,7 @@ export class Test2Page implements OnInit {
     },
     {
       text: 'Arrow A in Sketch booklet 5 shows you that...',
-      image: 'assets/test2ArrowA.jpg',
+      image: 'assets/sign44pp2.jpg',
       options: ['A. Must turn left.', 'B. Must proceed straight on or turn right.', 'C. May turn left.'],
       correctAnswer: 'A. Must turn left.',
       selectedAnswer: '',
@@ -270,6 +282,12 @@ export class Test2Page implements OnInit {
       image: 'assets/test2RM41.jpg',
       options: ['A. When you want to drive slower than 100km/h.', 'B. If the faster cars behind you want to pass.', 'C. If your car breaks down.'],
       correctAnswer: 'C. If your car breaks down.',
+      selectedAnswer: '',
+    },
+    {
+      text: 'You are driving on a single road. When may you drive on the left hand shoulder of the road to allow other vehicles to overtake?',
+      options: ['A. (a) At night. (b) If it is safe to do so. (c) If persons and vehicles are clearly visible for 100 meters ahead.', 'B. (a) between sunrise and sunset. (b) persons and vehicles are clearly visible for 150 meters ahead. (c) if it is safe to do so.', 'C. (a) if it is safe to do so. (b) Between sunrise and sunset. (c) persons and vehicles are clearly visible for 100 meters ahead.'],
+      correctAnswer: 'B. (a) between sunrise and sunset. (b) persons and vehicles are clearly visible for 150 meters ahead. (c) if it is safe to do so.',
       selectedAnswer: '',
     },
     //Q47 combo
