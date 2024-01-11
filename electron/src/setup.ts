@@ -206,12 +206,7 @@ export class ElectronCapacitorApp {
       if (!this.CapacitorFileConfig.electron?.hideMainWindowOnLaunch) {
         this.MainWindow.show();
       }
-      setTimeout(() => {
-        if (electronIsDev) {
-          this.MainWindow.webContents.openDevTools();
-        }
-        CapElectronEventEmitter.emit('CAPELECTRON_DeeplinkListenerInitialized', '');
-      }, 400);
+    
     });
   }
 }
