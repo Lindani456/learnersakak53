@@ -9,12 +9,7 @@ import { NavController } from '@ionic/angular';
 })
 export class TestPage implements OnInit {
   questions: any[] = [
-    {
-      text: 'You are driving on a single road. When may you drive on the left hand shoulder of the road to allow other vehicles to overtake?',
-      options: ['A. (a) At night. (b) If it is safe to do so. (c) If persons and vehicles are clearly visible for 100 meters ahead.', 'B. (a) between sunrise and sunset. (b) persons and vehicles are clearly visible for 150 meters ahead. (c) if it is safe to do so.', 'C. (a) if it is safe to do so. (b) Between sunrise and sunset. (c) persons and vehicles are clearly visible for 100 meters ahead.'],
-      correctAnswer: 'B. Be removed and impounded by traffic officer',
-      selectedAnswer: '',
-    },
+   
     {
       text: 'Abandoned vehicles may...',
       options: ['A. Not removed by anyone', 'B. Be removed and impounded by traffic officer', 'C. Be removed by passers by who feels that it is likely to be a cause of danger'],
@@ -223,7 +218,7 @@ export class TestPage implements OnInit {
     },
     {
       text: 'What is the general speed limits on urban roads unless otherwise indicated by a regulatory sign?',
-      options: ['A. 4okm/h', 'B. 60km/h', 'C. 80km/h'],
+      options: ['A. 40km/h', 'B. 60km/h', 'C. 80km/h'],
       correctAnswer: 'B. 60km/h',
       selectedAnswer: '',
     },
