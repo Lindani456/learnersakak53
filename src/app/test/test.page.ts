@@ -434,7 +434,7 @@ export class TestPage implements OnInit {
 
   currentQuestionIndex = 0;
   userAnswers: string[] = [];
-  timeRemaining = 5400; // 90 minutes in seconds
+  timeRemaining = 3600; // 60 minutes in seconds
   timer: any;
 
   constructor(private navCtrl: NavController) {}
