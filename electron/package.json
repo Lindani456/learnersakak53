@@ -1,10 +1,10 @@
 {
   "name": "learners",
   "version": "1.0.0",
-  "description": "An Amazing Capacitor App",
+  "description": "this is the desktop app for widows for linda's driving school this app will be used to take test 3 TESTS these test will check te user readiness to write the actual learns licence",
   "author": {
-    "name": "",
-    "email": ""
+  "name": "Vusumuzi Gwala and Lindali Mbuyeni",
+  "email": "vgwala149@gmail.com"
   },
   "repository": {
     "type": "git",

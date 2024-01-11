@@ -344,17 +344,17 @@ export class Test3Page implements OnInit {
       text: "Which rules must be adhered to when towing a vehicle?",
       options: [
           "SELECT THE CORRECT COMBINATION",
-          "(a) the two vehicles must not be more than 5 meters apart.",
-          "(b) the tow rope must be securely attached.",
-          "(c) the towed vehicle must have efficient brakes.",
-          "(a) don't exceed 50km/h.",
-          "(b) the two vehicles must be more than 4 meters apart.",
-          "(c) no passengers are allowed in a towed vehicle.",
-          "(a) the person controlling the towed vehicle must have a valid license for the same class of vehicle being towed.",
-          "(b) the towed vehicle must have efficient brakes.",
-          "(c) the two vehicles not be more than 3.5 meters apart."
+          "A. (a) the two vehicles must not be more than 5 meters apart. (b) the tow rope must be securely attached. (c) the towed vehicle must have efficient brakes.",
+        
+   
+          "B. (a)  don't exceed 50km/h. (b) the two vehicles must be more than 4 meters apart. (c) no passengers are allowed in a towed vehicle.",
+        
+   
+          "C. (a) the person controlling the towed vehicle must have a valid license for the same class of vehicle being towed. (b) the towed vehicle must have efficient brakes. (c) the two vehicles not be more than 3.5 meters apart." ,
+
+       
       ],
-      correctAnswer: "C. (a) the person controlling the towed vehicle must have a valid license for the same class of vehicle being towed. (b) the towed vehicle must have efficient brakes. (c) the two vehicles must not be more than 3.5 meters apart.",
+      correctAnswer:   "C. (a) the person controlling the towed vehicle must have a valid license for the same class of vehicle being towed. (b) the towed vehicle must have efficient brakes. (c) the two vehicles not be more than 3.5 meters apart." ,
       selectedAnswer: ""
   },
   {//36
