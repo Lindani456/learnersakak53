@@ -10,6 +10,12 @@ import { NavController } from '@ionic/angular';
 export class TestPage implements OnInit {
   questions: any[] = [
     {
+      text: 'You are driving on a single road. When may you drive on the left hand shoulder of the road to allow other vehicles to overtake?',
+      options: ['A. (a) At night. (b) If it is safe to do so. (c) If persons and vehicles are clearly visible for 100 meters ahead.', 'B. (a) between sunrise and sunset. (b) persons and vehicles are clearly visible for 150 meters ahead. (c) if it is safe to do so.', 'C. (a) if it is safe to do so. (b) Between sunrise and sunset. (c) persons and vehicles are clearly visible for 100 meters ahead.'],
+      correctAnswer: 'B. Be removed and impounded by traffic officer',
+      selectedAnswer: '',
+    },
+    {
       text: 'Abandoned vehicles may...',
       options: ['A. Not removed by anyone', 'B. Be removed and impounded by traffic officer', 'C. Be removed by passers by who feels that it is likely to be a cause of danger'],
       correctAnswer: 'B. Be removed and impounded by traffic officer',
@@ -24,6 +30,12 @@ export class TestPage implements OnInit {
     },
 
     ////Q7 missing combination
+    {
+      text: 'The dipped beam of a motor vehicle should...',
+      options: ['A. (a) be used in urban areas. (b) be used in dense traffic. (c) strike the road surface not more than 45 meters ahead of the vehicle. ', 'B. (a) be used in rural areas. (b) be used in dense traffic. (c) only be used when there is no approaching traffic. ', 'C. (a) be used between sunrise and sunset. (b) be used on a misty day. (c) Strike the road surface more than 150 meters ahead of the vehicle.'],
+      correctAnswer: 'A. (a) be used in urban areas. (b) be used in dense traffic. (c) strike the road surface not more than 45 meters ahead of the vehicle. ',
+      selectedAnswer: '',
+    },
     {
       text: 'Signs B3 commands that...',
       image: 'assets/b3.jpg',
@@ -61,7 +73,7 @@ export class TestPage implements OnInit {
     {
       text: 'Signs P4 warns that...',
       image: 'assets/Q14_1.jpg',
-      options: ['A. There may animals suddenly accross the road', 'B. No hunting is allowed in this area', 'C. There is a guest ahead'],
+      options: ['A. There may be animals suddenly accross the road', 'B. No hunting is allowed in this area', 'C. There is a guest ahead'],
       correctAnswer: 'A. There may animals suddenly accross the road',
       selectedAnswer: '',
     },
@@ -131,6 +143,12 @@ export class TestPage implements OnInit {
       selectedAnswer: '',
     },
     ///Q25 missing comination
+    {
+      text: 'SELECT THE CORRECT COMBINATION',
+      options: ['A. (a) When it is safe safe to do so.  (b) If the vehicle you are passing is turning right. (c) On a one way road that is wide enough for two or more vehicles to drive abreast.', 'B. (a) When a vehicle has stop at a pedestrian crossing.(b) on a curve. (c) when approaching a hill. ', 'C. (a) When it is a straight road. (b) When your view is not obstructed. (c) The space to the left on the edge line marking is open on the single lane road.'],
+      correctAnswer: 'B. Be removed and impounded by traffic officer',
+      selectedAnswer: '',
+    },
     {
       text: 'Signs E8 indicates that...',
       image: 'assets/Q26_2.jpg',
