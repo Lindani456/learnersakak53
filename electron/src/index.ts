@@ -7,6 +7,8 @@ import unhandled from 'electron-unhandled';
 import { autoUpdater } from 'electron-updater';
 
 import { ElectronCapacitorApp, setupContentSecurityPolicy, setupReloadWatcher } from './setup';
+// npx cap sync @capacitor-community/electron
+
 
 // Graceful handling of unhandled errors.
 unhandled();
