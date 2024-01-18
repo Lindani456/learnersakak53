@@ -32,6 +32,12 @@ const routes: Routes = [
     path: 'test3',
     loadChildren: () => import('./test3/test3.module').then( m => m.Test3PageModule)
   },
+  {
+    path: 'update-password',
+    loadChildren: () => import('./update-password/update-password.module').then( m => m.UpdatePasswordPageModule)
+  },
+ 
+
 
 
 
