@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras } from '@angular/router';
-import { NavController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
+import { PasswordService } from '../password.service';
 
 @Component({
   selector: 'app-test3',
@@ -646,10 +647,46 @@ export class Test3Page implements OnInit {
   timeRemaining = 3600; // 60 minutes in seconds
   timer: any;
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController, private alertController: AlertController, private passwordService: PasswordService) {}
+
+
+  async presentPasswordPrompt() {
+    const alert = await this.alertController.create({
+      header: 'Password Required',
+      inputs: [
+        {
+          name: 'password',
+          type: 'password',
+          placeholder: 'Enter Password',
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+        },
+        {
+          text: 'Submit',
+          handler: async (data) => {
+            if (this.passwordService.checkPassword(data.password)) {
+              console.log('Correct password. Granting access.');
+              this.startTimer();
+            } else {
+              console.log('Incorrect password. Access denied.');
+              this.presentPasswordPrompt();
+            }
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+  }
+
 
   ngOnInit() {
-    this.startTimer();
+    this.presentPasswordPrompt();
   }
 
   selectAnswer(answer: any) {
